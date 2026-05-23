@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Accessibility Statement — House of Recovery</title>
+<meta name="description" content="Accessibility statement and digital inclusion details for House of Recovery, Worksop." />
+<link rel="icon" type="image/png" href="assets/logo/icon-black.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@300;400;500;600;700&display=swap" />
+<style>
+  :root {
+    --ivory:        #FAF6EE;
+    --linen:        #F1E9DB;
+    --shell:        #E6D9C4;
+    --sage:         #A7B59A;
+    --sage-deep:    #6B7A62;
+    --terracotta:   #C99277;
+    --ink:          #2E2823;
+    --ink-soft:     #6F665B;
+    --ink-warm:     #4A3F36;
+
+    --font-display: "Marcellus", "Cormorant Garamond", "Times New Roman", serif;
+    --font-ui:      "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    --ease-out:     cubic-bezier(0.22, 1, 0.36, 1);
+    --t-std:        320ms;
+    --pad-page:     clamp(24px, 5.5vw, 88px);
+    --r-sm:         12px;
+    --r-md:         20px;
+    --r-pill:       999px;
+    --rule:         1px solid rgba(46, 40, 35, 0.10);
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    font-family: var(--font-ui);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--ink);
+    background: var(--ivory);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+    padding-left:  var(--pad-page);
+    padding-right: var(--pad-page);
+  }
+
+  .header {
+    border-bottom: var(--rule);
+    padding: 24px 0;
+    margin-bottom: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .header .brand img {
+    height: 36px;
+    width: auto;
+  }
+  .header .brand .name {
+    font-family: var(--font-display);
+    font-size: 16px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+  .back-link {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--sage-deep);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: color var(--t-std) var(--ease-out);
+  }
+  .back-link:hover {
+    color: var(--terracotta);
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    margin: 0 0 0.5em;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+  h1 { font-size: clamp(36px, 5vw, 56px); line-height: 1.1; margin-bottom: 40px; }
+  h2 { font-size: clamp(24px, 3.5vw, 32px); line-height: 1.2; margin-top: 48px; }
+  h3 { font-size: 20px; line-height: 1.3; margin-top: 32px; }
+
+  p { margin: 0 0 1.5em; color: var(--ink-soft); }
+  ul { margin: 0 0 1.5em; padding-left: 20px; color: var(--ink-soft); }
+  li { margin-bottom: 8px; }
+
+  .highlight {
+    font-style: italic;
+    color: var(--terracotta);
+  }
+
+  .footer {
+    border-top: var(--rule);
+    padding: 40px 0;
+    margin-top: 80px;
+    font-size: 13px;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .footer a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    transition: color var(--t-std) var(--ease-out);
+  }
+  .footer a:hover {
+    color: var(--terracotta);
+  }
+</style>
+</head>
+<body>
+
+<main class="wrap">
+  <header class="header">
+    <a class="brand" href="House of Recovery.html" aria-label="House of Recovery — home">
+      <img src="assets/logo/icon-black.png" alt="" />
+      <span class="name">House of Recovery</span>
+    </a>
+    <a class="back-link" href="House of Recovery.html">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      Back to Home
+    </a>
+  </header>
+
+  <article>
+    <h1>Accessibility <span class="highlight">Statement.</span></h1>
+    
+    <p>Last updated: May 2026</p>
+    
+    <p>At House of Recovery, we believe that clinical wellness should be accessible to everyone. We are committed to digital inclusion and strive to ensure that our website is fully accessible to people of all abilities and device capacities.</p>
+
+    <h2>1. Conformance Standard</h2>
+    <p>We work to conform our digital experiences to the <span class="highlight">Web Content Accessibility Guidelines (WCAG) 2.1 Level AA</span>. These guidelines outline how to make web content more accessible for people with sensory, cognitive, and mobility needs.</p>
+
+    <h2>2. Key Features Implemented</h2>
+    <p>To support digital accessibility on our landing page, we have built the following features directly into our codebase:</p>
+    <ul>
+      <li><strong>Contrast Optimization:</strong> All text and background colors meet or exceed WCAG AA contrast ratio standards. Headlines and body text use charcoal (`#2E2823`) on a warm cream surface (`#FAF6EE`) to guarantee legibility without eye strain.</li>
+      <li><strong>Keyboard Navigation:</strong> A skip-link is provided at the very top of the page (&ldquo;Skip to content&rdquo;) which becomes visible when focused, allowing screen-readers or keyboard-only users to bypass navigation. Every button, input, and link has a clear focus indicator outline.</li>
+      <li><strong>ARIA Attributes:</strong> Interactive elements (such as Lucide social icons and booking CTAs) have descriptive `aria-label` text to guide screen readers accurately.</li>
+      <li><strong>Touch Target Sizing:</strong> All buttons and tap targets on mobile viewports are sized to at least `44x44` pixels to allow comfortable interaction without accidental taps.</li>
+    </ul>
+
+    <h2>3. Motion Control (Reduced Motion)</h2>
+    <p>Our website utilizes animations and kinetic transitions to represent the flow of recovery. However, we respect system preferences for reduced motion:</p>
+    <ul>
+      <li>Our JavaScript animations check for the `prefers-reduced-motion: reduce` system setting.</li>
+      <li>When active, all complex scrolling interactions (Lenis smooth scroll), background drifts (marquee animations, drifting hero blobs), and scroll-triggered transforms are disabled or replaced with instant transitions.</li>
+    </ul>
+
+    <h2>4. Feedback &amp; Contact</h2>
+    <p>We continuously work to maintain and improve accessibility across our digital systems. If you encounter any barriers or have suggestions on how we can improve your digital experience, please let us know by emailing us at <a href="mailto:clare@houseofrecovery.co.uk">clare@houseofrecovery.co.uk</a>.</p>
+  </article>
+
+  <footer class="footer">
+    <div>&copy; 2026 House of Recovery. All rights reserved.</div>
+    <div><a href="House of Recovery.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></div>
+  </footer>
+</main>
+
+</body>
+</html>

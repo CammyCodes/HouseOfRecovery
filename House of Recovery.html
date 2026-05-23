@@ -1,0 +1,1651 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>House of Recovery — Restoring Vitality</title>
+<meta name="description" content="A recovery and skin-health sanctuary in Worksop. Body Ballancer lymphatic compression, Dermalogica skin treatments, contrast and infrared therapy, and the Tesla HIFEM Pelvic Floor Chair." />
+<link rel="icon" type="image/png" href="assets/logo/icon-black.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@300;400;500;600;700&display=swap" />
+<style>
+  :root {
+    --ivory:        #FAF6EE;
+    --linen:        #F1E9DB;
+    --shell:        #E6D9C4;
+    --sage:         #A7B59A;
+    --sage-deep:    #6B7A62;
+    --terracotta:   #C99277;
+    --terra-soft:   #E5C4AE;
+    --rose:         #D9B0A0;
+    --ink:          #2E2823;
+    --ink-soft:     #6F665B;
+    --ink-warm:     #4A3F36;
+
+    --font-display: "Marcellus", "Cormorant Garamond", "Times New Roman", serif;
+    --font-ui:      "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    --ease-out:     cubic-bezier(0.22, 1, 0.36, 1);
+    --t-micro:      140ms;
+    --t-std:        320ms;
+    --t-expr:       720ms;
+
+    --pad-page:     clamp(24px, 5.5vw, 88px);
+    --r-sm:         12px;
+    --r-md:         20px;
+    --r-lg:         32px;
+    --r-pill:       999px;
+    --r-blob:       58% 42% 52% 48% / 50% 56% 44% 50%;
+
+    --rule:         1px solid rgba(46, 40, 35, 0.10);
+    --rule-light:   1px solid rgba(250, 246, 238, 0.18);
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  body {
+    margin: 0;
+    font-family: var(--font-ui);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--ink);
+    background: var(--ivory);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection { background: var(--terra-soft); color: var(--ink); }
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    margin: 0;
+    color: var(--ink);
+    text-wrap: balance;
+    letter-spacing: -0.005em;
+  }
+  h1 { font-size: clamp(54px, 9vw, 112px); line-height: 1.0;  }
+  h2 { font-size: clamp(38px, 5.4vw, 72px); line-height: 1.05; }
+  h3 { font-size: clamp(26px, 3vw, 36px);   line-height: 1.15; }
+  h4 { font-size: 20px; line-height: 1.3; }
+
+  .italic { font-style: italic; }
+
+  .eyebrow {
+    font-family: var(--font-ui);
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--sage-deep);
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 22px; height: 1px;
+    background: currentColor; opacity: 0.55;
+  }
+  .eyebrow.no-rule::before { display: none; }
+  .eyebrow.on-dark { color: var(--terra-soft); }
+
+  p { margin: 0 0 1.1em; max-width: 64ch; }
+  p.lead { font-size: 19px; line-height: 1.65; color: var(--ink-soft); }
+  .on-dark p { color: rgba(250,246,238, 0.78); }
+  .on-dark p.lead { color: rgba(250,246,238, 0.88); }
+  .on-dark h1, .on-dark h2, .on-dark h3, .on-dark h4 { color: var(--ivory); }
+
+  .wrap {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left:  var(--pad-page);
+    padding-right: var(--pad-page);
+  }
+  .wrap-narrow { max-width: 780px; }
+  section { position: relative; }
+  .section-pad       { padding-top: clamp(96px, 13vw, 168px); padding-bottom: clamp(96px, 13vw, 168px); }
+  .section-pad-tight { padding-top: clamp(72px, 9vw, 120px); padding-bottom: clamp(72px, 9vw, 120px); }
+
+  .skip {
+    position: absolute; left: 12px; top: 12px;
+    background: var(--ink); color: var(--ivory);
+    padding: 10px 16px; font-size: 12px; letter-spacing: 0.18em;
+    text-transform: uppercase;
+    transform: translateY(-200%);
+    transition: transform var(--t-std) var(--ease-out);
+    z-index: 100; border-radius: var(--r-pill);
+  }
+  .skip:focus { transform: translateY(0); outline: none; }
+
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--sage-deep);
+    outline-offset: 4px;
+    border-radius: var(--r-sm);
+  }
+
+  .nav {
+    position: fixed; inset: 0 0 auto 0;
+    z-index: 50;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 22px var(--pad-page);
+    color: var(--ink);
+    transition: background-color var(--t-std) var(--ease-out),
+                padding var(--t-std) var(--ease-out),
+                box-shadow var(--t-std) var(--ease-out);
+  }
+  .nav.scrolled {
+    background: rgba(250, 246, 238, 0.88);
+    backdrop-filter: saturate(140%) blur(14px);
+    -webkit-backdrop-filter: saturate(140%) blur(14px);
+    padding-top: 14px; padding-bottom: 14px;
+    box-shadow: 0 1px 0 rgba(46,40,35,0.06);
+  }
+  .nav .brand {
+    display: inline-flex; align-items: center; gap: 12px;
+    height: 42px;
+  }
+  .nav .brand img { height: 42px; width: auto; }
+  .nav .brand .name {
+    font-family: var(--font-display);
+    font-size: 17px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+  @media (max-width: 640px) {
+    .nav .brand .name { display: none; }
+  }
+  .nav-links {
+    display: flex; align-items: center; gap: 32px;
+    font-size: 13px; letter-spacing: 0.06em; font-weight: 500;
+  }
+  .nav-links .nav-link { display: none; }
+  @media (min-width: 920px) { .nav-links .nav-link { display: inline; } }
+  .nav-links a { opacity: 0.85; transition: opacity var(--t-std) var(--ease-out); }
+  .nav-links a:hover { opacity: 1; }
+
+  .btn {
+    display: inline-flex; align-items: center; gap: 12px;
+    font-family: var(--font-ui); font-weight: 600;
+    font-size: 13px; letter-spacing: 0.06em;
+    padding: 14px 24px;
+    min-height: 46px;
+    border: 1px solid currentColor;
+    background: transparent; color: var(--ink);
+    cursor: pointer;
+    border-radius: var(--r-pill);
+    transition: background-color var(--t-std) var(--ease-out),
+                color var(--t-std) var(--ease-out),
+                border-color var(--t-std) var(--ease-out),
+                transform var(--t-std) var(--ease-out);
+  }
+  .btn .arrow { width: 14px; height: 8px; flex: none; transition: transform var(--t-std) var(--ease-out); }
+  .btn:hover { transform: translateY(-1px); }
+  .btn:hover .arrow { transform: translateX(4px); }
+
+  .btn-solid { background: var(--ink); color: var(--ivory); border-color: var(--ink); }
+  .btn-solid:hover { background: var(--ink-warm); border-color: var(--ink-warm); }
+
+  .btn-sage { background: var(--sage-deep); color: var(--ivory); border-color: var(--sage-deep); }
+  .btn-sage:hover { background: var(--ink-warm); border-color: var(--ink-warm); }
+
+  .btn-terra { background: var(--terracotta); color: var(--ivory); border-color: var(--terracotta); }
+  .btn-terra:hover { filter: brightness(0.95); }
+
+  .btn-light { background: var(--ivory); color: var(--ink); border-color: var(--ivory); }
+  .btn-light:hover { background: var(--linen); border-color: var(--linen); }
+
+  .btn-ghost { background: transparent; color: var(--ink); border-color: rgba(46,40,35,0.25); }
+  .btn-ghost:hover { background: var(--linen); border-color: var(--ink); }
+
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100svh;
+    background:
+      linear-gradient(to bottom, rgba(250, 246, 238, 0.72), rgba(250, 246, 238, 0.95)),
+      url('assets/images/hero.jpg') center/cover no-repeat;
+    overflow: hidden;
+    display: flex; align-items: center;
+    padding-top: 120px;
+  }
+  .hero-content {
+    width: 100%;
+    text-align: center;
+    display: flex; flex-direction: column; align-items: center;
+    padding-top: 40px; padding-bottom: 80px;
+  }
+  .hero-logo {
+    width: clamp(120px, 16vw, 180px);
+    height: auto;
+    opacity: 0.92;
+    margin-bottom: 36px;
+  }
+  .hero .eyebrow { margin-bottom: 28px; }
+  .hero h1 {
+    font-weight: 400;
+    color: var(--ink);
+    max-width: 14ch;
+    margin: 0 auto 28px;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--terracotta);
+  }
+  .hero .lead {
+    max-width: 56ch;
+    color: var(--ink-soft);
+    font-size: clamp(17px, 1.4vw, 19px);
+    margin: 0 auto 44px;
+  }
+  .hero-ctas {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 16px;
+  }
+
+  .hero-blob {
+    position: absolute;
+    border-radius: var(--r-blob);
+    filter: blur(30px);
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  .hero-blob.a {
+    width: 38vw; height: 38vw; max-width: 480px; max-height: 480px;
+    left: -8vw; bottom: -10vw;
+    background: var(--terra-soft);
+  }
+  .hero-blob.b {
+    width: 30vw; height: 30vw; max-width: 380px; max-height: 380px;
+    right: -6vw; top: 8vw;
+    background: rgba(167, 181, 154, 0.45);
+  }
+
+  .scroll-cue {
+    position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%);
+    z-index: 3;
+    font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--ink-soft);
+    display: flex; flex-direction: column; align-items: center; gap: 10px;
+    font-weight: 600;
+  }
+  @media (max-width: 640px) or (max-height: 740px) {
+    .scroll-cue { display: none; }
+  }
+  .scroll-cue .line {
+    width: 1px; height: 36px; background: currentColor; opacity: 0.45;
+    transform-origin: top;
+    animation: scrollLine 2.6s var(--ease-out) infinite;
+  }
+  @keyframes scrollLine {
+    0%   { transform: scaleY(0); opacity: 0; }
+    35%  { transform: scaleY(1); opacity: 0.7; }
+    100% { transform: scaleY(1); opacity: 0;  }
+  }
+  @media (prefers-reduced-motion: reduce) { .scroll-cue .line { animation: none; } }
+
+  .philosophy { background: var(--ivory); text-align: center; }
+  .philosophy .wrap-narrow { display: flex; flex-direction: column; align-items: center; }
+  .philosophy .quote {
+    font-family: var(--font-display);
+    font-size: clamp(34px, 5vw, 60px);
+    line-height: 1.18;
+    color: var(--ink);
+    margin: 24px auto 40px;
+    max-width: 22ch;
+  }
+  .philosophy .quote em { color: var(--terracotta); font-style: italic; }
+  .philosophy .quote .sep { color: var(--sage); margin: 0 0.25em; font-style: normal; }
+  .philosophy p { margin-left: auto; margin-right: auto; }
+  .philosophy p.lead { font-size: 19px; }
+
+  .sec-head {
+    display: grid; grid-template-columns: 1fr; gap: 10px;
+    margin-bottom: clamp(56px, 7vw, 80px);
+  }
+  @media (min-width: 920px) {
+    .sec-head { grid-template-columns: 1fr 1fr; gap: 32px; align-items: end; }
+  }
+  .sec-head h2 { max-width: 18ch; }
+  .sec-head .sec-head-side {
+    color: var(--ink-soft);
+    max-width: 46ch;
+  }
+  .on-dark .sec-head .sec-head-side { color: rgba(250,246,238,0.78); }
+
+  .discipline-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+  @media (min-width: 980px) {
+    .discipline-grid { grid-template-columns: 1.05fr 1fr; gap: 88px; align-items: center; }
+    .discipline-grid.reverse > .discipline-visual { order: 2; }
+  }
+
+  .discipline-num {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 14px;
+    color: var(--terracotta);
+    margin-bottom: 12px;
+    display: block;
+    letter-spacing: 0.04em;
+  }
+  .on-dark .discipline-num { color: var(--terra-soft); }
+
+  .discipline-copy h2 { margin-bottom: 24px; }
+  .discipline-copy h2 em { color: var(--terracotta); font-style: italic; }
+  .on-dark .discipline-copy h2 em { color: var(--terra-soft); }
+
+  .discipline-meta {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 32px;
+    margin-top: 32px;
+  }
+  .discipline-meta .label {
+    font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--sage-deep); font-weight: 700; margin-bottom: 10px;
+  }
+  .on-dark .discipline-meta .label { color: var(--sage); }
+  .discipline-meta p { margin-bottom: 0; font-size: 15px; line-height: 1.65; color: var(--ink-soft); }
+  .on-dark .discipline-meta p { color: rgba(250,246,238, 0.78); }
+
+  .pricelist {
+    list-style: none; padding: 0; margin: 36px 0 0;
+    border-top: var(--rule);
+  }
+  .on-dark .pricelist { border-top: var(--rule-light); }
+  .pricelist li {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    column-gap: 24px;
+    row-gap: 6px;
+    padding: 20px 0;
+    border-bottom: var(--rule);
+    align-items: baseline;
+  }
+  .on-dark .pricelist li { border-bottom: var(--rule-light); }
+  .pricelist .p-name {
+    font-family: var(--font-display);
+    font-size: clamp(19px, 1.6vw, 23px);
+    line-height: 1.25;
+    color: var(--ink);
+  }
+  .on-dark .pricelist .p-name { color: var(--ivory); }
+  .pricelist .p-price {
+    font-family: var(--font-display);
+    font-size: clamp(20px, 1.7vw, 26px);
+    color: var(--terracotta);
+    white-space: nowrap;
+  }
+  .pricelist .p-meta {
+    grid-column: 1 / -1;
+    font-size: 13px;
+    color: var(--ink-soft);
+    display: flex; gap: 14px; flex-wrap: wrap; align-items: center;
+  }
+  .on-dark .pricelist .p-meta { color: rgba(250,246,238, 0.64); }
+  .pricelist .p-meta .saves {
+    background: rgba(167, 181, 154, 0.32);
+    color: var(--sage-deep);
+    padding: 3px 12px;
+    border-radius: var(--r-pill);
+    font-weight: 700; font-size: 11px;
+    letter-spacing: 0.06em;
+  }
+  .on-dark .pricelist .p-meta .saves {
+    background: rgba(167, 181, 154, 0.22); color: var(--sage);
+  }
+  .discipline-cta { margin-top: 40px; }
+
+  .ph {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    background: var(--linen);
+    overflow: hidden;
+    border-radius: var(--r-lg);
+  }
+  .ph-16x9 { aspect-ratio: 16 / 9; }
+  .ph-1x1  { aspect-ratio: 1 / 1; }
+  .ph-3x4  { aspect-ratio: 3 / 4; }
+  .ph::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image: repeating-linear-gradient(
+      135deg,
+      rgba(46, 40, 35, 0.05) 0 1px,
+      transparent 1px 16px
+    );
+  }
+  .ph::after {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(60% 40% at 30% 30%, rgba(255,255,255,0.4), transparent 65%);
+    pointer-events: none;
+  }
+  .ph .ph-caption {
+    position: absolute; left: 16px; bottom: 16px; right: 16px;
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 10px; letter-spacing: 0.04em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    line-height: 1.6;
+    background: rgba(250, 246, 238, 0.85);
+    padding: 9px 12px;
+    border-radius: var(--r-sm);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+  .ph .ph-caption .k { color: var(--terracotta); font-weight: 700; }
+
+  .ph.bb   { background: linear-gradient(160deg, #efe1cf 0%, #e3cdb1 100%); }
+  .ph.derm { background: linear-gradient(160deg, #fbf5ec 0%, #ead9c0 100%); }
+  .ph.bb::before {
+    background-image:
+      repeating-linear-gradient(90deg,
+        transparent 0 36px,
+        rgba(46,40,35,0.08) 36px 38px);
+    -webkit-mask: linear-gradient(180deg, transparent, #000 25%, #000 75%, transparent);
+            mask: linear-gradient(180deg, transparent, #000 25%, #000 75%, transparent);
+  }
+  .ph.derm::after {
+    background:
+      radial-gradient(60% 45% at 50% 35%, rgba(255,255,255,0.6), transparent 65%);
+  }
+
+  .contrast { background: var(--linen); }
+  .contrast-split {
+    display: grid; grid-template-columns: 1fr; gap: 28px;
+  }
+  @media (min-width: 880px) {
+    .contrast-split { grid-template-columns: 1fr 1fr; }
+  }
+  .scene {
+    position: relative;
+    padding: clamp(36px, 5vw, 60px);
+    border-radius: var(--r-lg);
+    color: var(--ivory);
+    min-height: 520px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    overflow: hidden;
+  }
+  .scene.cold {
+    background:
+      radial-gradient(60% 50% at 30% 25%, rgba(255,255,255,0.18), transparent 60%),
+      linear-gradient(160deg, #8FA8B0 0%, #6A8590 60%, #4E6770 100%);
+  }
+  .scene.hot {
+    background:
+      radial-gradient(55% 50% at 70% 25%, rgba(255, 220, 180, 0.32), transparent 60%),
+      linear-gradient(160deg, #D5A081 0%, #B97F5B 55%, #7E563B 100%);
+  }
+  .scene::after {
+    content: "";
+    position: absolute; inset: 0;
+    background-image: repeating-linear-gradient(120deg, rgba(255,255,255,0.04) 0 1px, transparent 1px 5px);
+    pointer-events: none;
+    border-radius: var(--r-lg);
+  }
+  .scene .scene-label {
+    font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase;
+    font-weight: 700;
+    color: rgba(250,246,238, 0.88);
+    margin-bottom: 18px;
+  }
+  .scene .temp {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: clamp(52px, 7.5vw, 96px);
+    line-height: 1;
+    color: var(--ivory);
+    margin: 0;
+  }
+  .scene .scene-body {
+    color: rgba(250, 246, 238, 0.92);
+    max-width: 38ch; margin-top: 24px;
+    font-size: 15px; line-height: 1.65;
+  }
+  .scene .pricelist { margin-top: 28px; border-top-color: rgba(250,246,238,0.28); }
+  .scene .pricelist li { border-bottom-color: rgba(250,246,238,0.22); padding: 14px 0; }
+  .scene .pricelist .p-name { color: var(--ivory); font-size: 18px; }
+  .scene .pricelist .p-price { color: var(--ivory); }
+  .scene .pricelist .p-meta { color: rgba(250,246,238, 0.72); }
+
+  .tesla .tesla-visual {
+    position: relative;
+    aspect-ratio: 4/5;
+    background: linear-gradient(160deg, #f1e9db 0%, #d8c7ac 100%);
+    overflow: hidden;
+    border-radius: var(--r-lg);
+  }
+  .tesla .tesla-visual::before {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      repeating-radial-gradient(circle at 50% 55%,
+        rgba(46,40,35,0.0) 0 30px,
+        rgba(46,40,35,0.07) 30px 31px);
+    -webkit-mask: radial-gradient(80% 80% at 50% 55%, #000, transparent 80%);
+            mask: radial-gradient(80% 80% at 50% 55%, #000, transparent 80%);
+  }
+  .tesla .tesla-visual::after {
+    content: "";
+    position: absolute; inset: 0;
+    background: radial-gradient(35% 28% at 50% 55%, rgba(201,146,119,0.22), transparent 70%);
+  }
+  .tesla .tesla-glyph {
+    position: absolute; left: 50%; top: 55%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: clamp(120px, 22vw, 260px);
+    line-height: 1;
+    color: rgba(74,63,54,0.32);
+    user-select: none;
+  }
+  .tesla-stats {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+    margin-top: 28px;
+  }
+  .tesla-stats .stat {
+    background: var(--ivory);
+    border-radius: var(--r-md);
+    padding: 22px 24px;
+    border: var(--rule);
+  }
+  .tesla-stats .stat-num {
+    font-family: var(--font-display);
+    font-size: clamp(36px, 4.4vw, 52px);
+    line-height: 1;
+    color: var(--ink);
+    margin-bottom: 10px;
+  }
+  .tesla-stats .stat-num em { color: var(--terracotta); font-style: italic; }
+  .tesla-stats .stat-label {
+    font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--sage-deep); font-weight: 600;
+  }
+
+  .testimonials { background: var(--linen); }
+  .testimonials-grid {
+    display: grid; grid-template-columns: 1fr; gap: 28px;
+  }
+  @media (min-width: 720px) {
+    .testimonials-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (min-width: 1080px) {
+    .testimonials-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  .quote-card {
+    background: var(--ivory);
+    padding: 36px 32px 32px;
+    border-radius: var(--r-md);
+    display: flex; flex-direction: column;
+    box-shadow: 0 1px 0 rgba(46,40,35,0.04);
+  }
+  .quote-card .mark {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 64px; line-height: 0.55;
+    color: var(--terra-soft);
+    margin-bottom: 4px;
+    height: 28px;
+  }
+  .quote-card blockquote {
+    font-family: var(--font-display);
+    font-size: 21px; line-height: 1.45;
+    margin: 0 0 28px;
+    color: var(--ink);
+    font-weight: 400;
+  }
+  .quote-card .attrib {
+    margin-top: auto;
+    padding-top: 16px;
+    display: flex; align-items: center; gap: 14px;
+  }
+  .quote-card .avatar {
+    width: 40px; height: 40px;
+    border-radius: var(--r-pill);
+    background: linear-gradient(135deg, var(--terra-soft), var(--sage));
+    display: inline-flex; align-items: center; justify-content: center;
+    font-family: var(--font-display); color: var(--ivory);
+    font-size: 15px; letter-spacing: 0.04em;
+    flex: none;
+    object-fit: cover;
+  }
+  .quote-card .who { display: flex; flex-direction: column; gap: 2px; }
+  .quote-card .name {
+    font-size: 14px; color: var(--ink); font-weight: 700;
+  }
+  .quote-card .treatment {
+    font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--sage-deep); font-weight: 600;
+  }
+
+  .visit { background: var(--ivory); }
+  .visit-grid {
+    display: grid; grid-template-columns: 1fr; gap: 56px;
+  }
+  @media (min-width: 980px) {
+    .visit-grid { grid-template-columns: 0.9fr 1fr; gap: 80px; align-items: start; }
+  }
+  .visit address {
+    font-style: normal;
+    font-family: var(--font-display);
+    font-size: clamp(22px, 2.2vw, 30px);
+    line-height: 1.35;
+    color: var(--ink);
+    margin: 14px 0 32px;
+    max-width: 18ch;
+  }
+  .hours-card {
+    background: var(--linen);
+    border-radius: var(--r-md);
+    padding: 28px 32px;
+    margin-top: 8px;
+  }
+  .hours-card .eyebrow { margin-bottom: 14px; }
+  .hours-table { width: 100%; border-collapse: collapse; }
+  .hours-table td {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(46,40,35,0.08);
+    font-size: 15px;
+    color: var(--ink);
+  }
+  .hours-table td:first-child {
+    font-family: var(--font-display);
+    font-size: 16px;
+    color: var(--ink);
+  }
+  .hours-table td:last-child { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink-soft); }
+  .hours-table tr:last-child td { border-bottom: 0; }
+  .hours-table td.closed { color: var(--terracotta); font-style: italic; }
+
+  .visit-contact {
+    margin-top: 28px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+  }
+  .visit-contact .label {
+    font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase;
+    color: var(--sage-deep); font-weight: 700; margin-bottom: 8px;
+  }
+  .visit-contact .val {
+    font-family: var(--font-display);
+    color: var(--ink);
+    font-size: 18px;
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+  @media (max-width: 480px) {
+    .visit-contact { grid-template-columns: 1fr; }
+  }
+  .todo {
+    font-family: ui-monospace, monospace;
+    font-size: 11px;
+    color: var(--terracotta);
+    background: rgba(201,146,119,0.12);
+    padding: 2px 8px;
+    border-radius: var(--r-pill);
+    letter-spacing: 0.04em;
+  }
+
+  .map-ph {
+    position: relative;
+    aspect-ratio: 5 / 6;
+    background: var(--linen);
+    border-radius: var(--r-lg);
+    overflow: hidden;
+  }
+  .map-ph iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    filter: grayscale(1) sepia(0.18) contrast(0.95) saturate(0.8) brightness(0.98);
+    transition: filter var(--t-std) var(--ease-out), opacity var(--t-std) var(--ease-out);
+    opacity: 0.9;
+  }
+  .map-ph:hover iframe {
+    filter: grayscale(0.2) sepia(0.05) contrast(1.0) saturate(1.0) brightness(1.0);
+    opacity: 1;
+  }
+
+  .footer {
+    background: var(--ink-warm);
+    color: var(--ivory);
+    padding-top: clamp(48px, 8vw, 88px); padding-bottom: 32px;
+  }
+  .footer-grid {
+    display: grid; grid-template-columns: 1fr; gap: 56px;
+    margin-bottom: 64px;
+  }
+  @media (min-width: 480px) and (max-width: 879px) {
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (min-width: 880px) {
+    .footer-grid { grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 56px; }
+  }
+  .footer-brand img { width: 64px; opacity: 0.95; margin-bottom: 24px; }
+  .footer h4 {
+    color: var(--terra-soft);
+    font-family: var(--font-ui);
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .footer p, .footer li, .footer a { color: rgba(250,246,238, 0.72); }
+  .footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; font-size: 14px; }
+  .footer ul.hours-mini { font-variant-numeric: tabular-nums; }
+  .footer ul.hours-mini li {
+    display: flex; justify-content: space-between; gap: 16px;
+    border-bottom: 1px solid rgba(250,246,238,0.10);
+    padding-bottom: 8px;
+  }
+  .footer a:hover { color: var(--ivory); }
+  .footer .footer-cta { margin-top: 16px; }
+  .footer .socials { display: flex; gap: 12px; margin-top: 22px; }
+  .footer .socials a {
+    width: 40px; height: 40px;
+    border: 1px solid rgba(250,246,238,0.22);
+    border-radius: var(--r-pill);
+    display: inline-flex; align-items: center; justify-content: center;
+    transition: background var(--t-std) var(--ease-out), border-color var(--t-std) var(--ease-out);
+  }
+  .footer .socials a:hover { background: rgba(250,246,238,0.08); border-color: var(--ivory); }
+  .footer .socials svg { width: 18px; height: 18px; stroke: currentColor; }
+  .footer-bottom {
+    border-top: 1px solid rgba(250,246,238,0.12);
+    padding-top: 28px;
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px;
+    font-size: 12px;
+    color: rgba(250,246,238,0.5);
+  }
+  .footer-bottom ul { display: flex; flex-wrap: wrap; gap: 22px; font-size: 12px; }
+  .footer-bottom a { color: rgba(250,246,238,0.55); }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity var(--t-expr) var(--ease-out),
+                transform var(--t-expr) var(--ease-out);
+    will-change: opacity, transform;
+  }
+  .reveal.in { opacity: 1; transform: none; }
+  .reveal[data-d="1"] { transition-delay: 80ms; }
+  .reveal[data-d="2"] { transition-delay: 160ms; }
+  .reveal[data-d="3"] { transition-delay: 240ms; }
+  .reveal[data-d="4"] { transition-delay: 320ms; }
+  .reveal[data-d="5"] { transition-delay: 400ms; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { transition-duration: 80ms; transform: none; }
+  }
+
+  /* — Word reveal (clip-path wipe) — */
+  .reveal-words { display: inline-block; }
+  .reveal-words .w {
+    display: inline-block;
+    clip-path: inset(0 100% 0 0);
+    transform: translateY(0.12em);
+    transition: clip-path 900ms var(--ease-out), transform 900ms var(--ease-out);
+  }
+  .reveal-words.in .w { clip-path: inset(0 0 0 0); transform: none; }
+  .reveal-words .w + .w { transition-delay: 80ms; }
+  .reveal-words .w + .w + .w { transition-delay: 160ms; }
+  .reveal-words .w + .w + .w + .w { transition-delay: 240ms; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal-words .w { transition-duration: 80ms; clip-path: none; transform: none; }
+  }
+
+  /* — Scroll progress — */
+  .scroll-progress {
+    position: fixed; top: 0; left: 0; right: 0;
+    height: 2px; z-index: 60;
+    background: transparent;
+    pointer-events: none;
+  }
+  .scroll-progress .bar {
+    height: 100%;
+    width: var(--p, 0%);
+    background: linear-gradient(90deg, var(--sage) 0%, var(--terracotta) 100%);
+    transition: width 60ms linear;
+  }
+
+  /* — Drifting hero blobs — */
+  @keyframes drift-a {
+    0%   { transform: translate(0, 0) scale(1); }
+    50%  { transform: translate(28px, -22px) scale(1.06); }
+    100% { transform: translate(0, 0) scale(1); }
+  }
+  @keyframes drift-b {
+    0%   { transform: translate(0, 0) scale(1); }
+    50%  { transform: translate(-32px, 18px) scale(1.05); }
+    100% { transform: translate(0, 0) scale(1); }
+  }
+  .hero-blob.a { animation: drift-a 14s ease-in-out infinite; }
+  .hero-blob.b { animation: drift-b 18s ease-in-out infinite; }
+
+  /* — Hero logo breath — */
+  @keyframes breath {
+    0%, 100% { transform: translateY(0) scale(1); opacity: 0.92; }
+    50%      { transform: translateY(-6px) scale(1.015); opacity: 1; }
+  }
+  .hero-logo.in { animation: breath 6s ease-in-out infinite; }
+
+  /* — Marquee strip — */
+  .marquee {
+    background: var(--ivory);
+    border-top: var(--rule);
+    border-bottom: var(--rule);
+    overflow: hidden;
+    padding: 26px 0;
+  }
+  .marquee-track {
+    display: flex; align-items: center; gap: 56px;
+    width: max-content;
+    animation: marquee 38s linear infinite;
+    font-family: var(--font-display);
+    font-size: clamp(20px, 2vw, 28px);
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  .marquee-track .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--terracotta);
+    display: inline-block; flex: none;
+  }
+  .marquee-track .word em { font-style: italic; color: var(--terracotta); }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track { animation: none; transform: none; }
+  }
+
+  /* — Image hover zoom — */
+  .ph { transform: translateZ(0); }
+  .ph .ph-fill {
+    position: absolute; inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1200ms var(--ease-out);
+    transform-origin: center;
+  }
+  .ph:hover .ph-fill { transform: scale(1.04); }
+  @media (prefers-reduced-motion: reduce) {
+    .ph:hover .ph-fill { transform: none; }
+  }
+
+  /* — Pricelist hover sweep — */
+  .pricelist li {
+    position: relative;
+    transition: background-color var(--t-std) var(--ease-out);
+  }
+  .pricelist li::after {
+    content: "";
+    position: absolute; left: 0; bottom: -1px;
+    width: 0; height: 2px;
+    background: var(--terracotta);
+    transition: width 560ms var(--ease-out);
+  }
+  .pricelist li:hover { background: rgba(201,146,119,0.04); }
+  .pricelist li:hover::after { width: 64px; }
+  .pricelist li:hover .p-price { letter-spacing: 0.01em; }
+  .pricelist .p-price { transition: letter-spacing var(--t-std) var(--ease-out); }
+  @media (prefers-reduced-motion: reduce) {
+    .pricelist li:hover::after { width: 0; }
+  }
+
+  /* — Contrast scene atmosphere — mist & heat — */
+  .scene .atmo {
+    position: absolute; inset: 0;
+    pointer-events: none;
+    border-radius: var(--r-lg);
+    overflow: hidden;
+  }
+  .scene .mist, .scene .heat {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(28px);
+    opacity: 0.55;
+    mix-blend-mode: screen;
+  }
+  .scene.cold .mist {
+    width: 70%; height: 40%;
+    background: radial-gradient(closest-side, rgba(255,255,255,0.75), transparent 70%);
+    animation: mistDrift 11s ease-in-out infinite;
+  }
+  .scene.cold .mist.m1 { left: -10%; top: 18%; }
+  .scene.cold .mist.m2 { right: -20%; bottom: 22%; animation-delay: -4s; animation-duration: 13s; }
+  @keyframes mistDrift {
+    0%, 100% { transform: translate(0,0); opacity: 0.5; }
+    50%      { transform: translate(40px, -10px); opacity: 0.7; }
+  }
+  .scene.hot .heat {
+    width: 60%; height: 50%;
+    background: radial-gradient(closest-side, rgba(255, 200, 140, 0.5), transparent 70%);
+    animation: heatPulse 5.5s ease-in-out infinite;
+  }
+  .scene.hot .heat.h1 { right: -15%; top: 25%; }
+  .scene.hot .heat.h2 { left: -10%; bottom: 10%; animation-delay: -2.5s; animation-duration: 7.5s; }
+  @keyframes heatPulse {
+    0%, 100% { transform: scale(1); opacity: 0.4; }
+    50%      { transform: scale(1.12); opacity: 0.65; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .scene .mist, .scene .heat { animation: none; }
+  }
+
+  /* — Count-up stat — */
+  .count {
+    display: inline-block;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* — Contact link — */
+  .contact-link {
+    color: var(--ink);
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 360ms var(--ease-out), color var(--t-std) var(--ease-out);
+  }
+  .contact-link:hover { color: var(--terracotta); background-size: 100% 1px; }
+  @media (prefers-reduced-motion: reduce) {
+    .contact-link:hover { background-size: 0% 1px; }
+  }
+
+  /* — Floating Book pill (mobile) — */
+  .book-fab {
+    position: fixed;
+    bottom: 22px; left: 50%;
+    transform: translate(-50%, 120%);
+    z-index: 45;
+    box-shadow: 0 10px 30px rgba(46,40,35,0.25);
+    transition: transform 520ms var(--ease-out), opacity 360ms var(--ease-out);
+    opacity: 0;
+  }
+  .book-fab.show { transform: translate(-50%, 0); opacity: 1; }
+  @media (min-width: 720px) {
+    .book-fab { display: none; }
+  }
+
+  /* — Discipline number rise — */
+  .discipline-num {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 600ms var(--ease-out) 200ms, transform 600ms var(--ease-out) 200ms;
+  }
+  .reveal.in .discipline-num,
+  .in .discipline-num { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .discipline-num { opacity: 1; transform: none; transition: none; }
+  }
+
+  /* — Hero CTAs subtle rotate of arrow — */
+  .btn-terra:hover { box-shadow: 0 8px 24px rgba(201,146,119,0.32); }
+
+  /* — Stat tile lift — */
+  .tesla-stats .stat {
+    transition: transform var(--t-std) var(--ease-out), box-shadow var(--t-std) var(--ease-out);
+  }
+  .tesla-stats .stat:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(46,40,35,0.08);
+  }
+
+  /* — Quote card lift — */
+  .quote-card {
+    transition: transform var(--t-std) var(--ease-out), box-shadow var(--t-std) var(--ease-out);
+  }
+  .quote-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 36px rgba(46,40,35,0.08);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .quote-card:hover, .tesla-stats .stat:hover { transform: none; box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip" href="#disciplines">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"><div class="bar"></div></div>
+
+<header class="nav" id="nav" role="banner" data-screen-label="Nav">
+  <a class="brand" href="#top" aria-label="House of Recovery — home">
+    <img src="assets/logo/icon-black.png" alt="" />
+    <span class="name">House of Recovery</span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a class="nav-link" href="#philosophy">Philosophy</a>
+    <a class="nav-link" href="#disciplines">Disciplines</a>
+    <a class="nav-link" href="#visit">Visit</a>
+    <a class="btn btn-solid" href="https://sumupbookings.com/house-of-recovery" target="_blank" rel="noopener noreferrer" aria-label="Book a session at House of Recovery (opens external booking site)">
+      Book a Session
+      <svg class="arrow" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M0 4h13M9 1l4 3-4 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero" data-screen-label="01 Hero">
+    <span class="hero-blob a" aria-hidden="true"></span>
+    <span class="hero-blob b" aria-hidden="true"></span>
+    <div class="wrap hero-content">
+      <img class="hero-logo reveal" src="assets/logo/icon-black.png" alt="" />
+      <p class="eyebrow no-rule reveal" data-d="1">Restoration · Resilience · Results</p>
+      <h1 class="reveal" data-d="2">Restoring <em>Vitality.</em></h1>
+      <p class="lead reveal" data-d="3">A recovery sanctuary in Worksop, gathering Body Ballancer lymphatic compression, Dermalogica skin treatments, contrast &amp; infrared therapy and the Tesla HIFEM Pelvic Floor Chair under one quietly considered roof.</p>
+      <div class="hero-ctas reveal" data-d="4">
+        <a class="btn btn-terra" href="https://sumupbookings.com/house-of-recovery" target="_blank" rel="noopener noreferrer" aria-label="Book a session at House of Recovery (opens external booking site)">
+          Book a Session
+          <svg class="arrow" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M0 4h13M9 1l4 3-4 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#disciplines">
+          Explore the Disciplines
+          <svg class="arrow" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M0 4h13M9 1l4 3-4 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true">
+      <span>Scroll</span>
+      <span class="line"></span>
+    </div>
+  </section>
+
+  <section class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="word">Restoration</span><span class="dot"></span>
+      <span class="word"><em>Lymphatic</em> flow</span><span class="dot"></span>
+      <span class="word">Skin as health</span><span class="dot"></span>
+      <span class="word">Contrast &amp; <em>infrared</em></span><span class="dot"></span>
+      <span class="word">Supramaximal recovery</span><span class="dot"></span>
+      <span class="word"><em>Discipline</em></span><span class="dot"></span>
+      <span class="word">Resilience</span><span class="dot"></span>
+      <span class="word">Restoration</span><span class="dot"></span>
+      <span class="word"><em>Lymphatic</em> flow</span><span class="dot"></span>
+      <span class="word">Skin as health</span><span class="dot"></span>
+      <span class="word">Contrast &amp; <em>infrared</em></span><span class="dot"></span>
+      <span class="word">Supramaximal recovery</span><span class="dot"></span>
+      <span class="word"><em>Discipline</em></span><span class="dot"></span>
+      <span class="word">Resilience</span><span class="dot"></span>
+    </div>
+  </section>
+
+  <section class="philosophy section-pad" id="philosophy" data-screen-label="02 Philosophy">
+    <div class="wrap wrap-narrow">
+      <p class="eyebrow reveal">Our Philosophy</p>
+      <p class="quote reveal" data-d="1">Skincare is health.<span class="sep">·</span><em>Recovery is discipline.</em></p>
+      <p class="lead reveal" data-d="2">House of Recovery isn't a spa. We don't dim the lights, pour prosecco, or call our work a treat. We measure what changes — fluid moved, contractions delivered, congestion cleared, resilience built.</p>
+      <p class="reveal" data-d="3">Every session is prescribed, not improvised. Whether you arrive an athlete in mid-block, a mother in the months after birth, or simply tired of carrying the small accumulations of modern life, you leave with a protocol. We build resilience. You build life.</p>
+    </div>
+  </section>
+
+  <section id="disciplines" class="section-pad-tight" style="padding-bottom: 0;" data-screen-label="03 Disciplines Intro">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow reveal">The Four Disciplines</p>
+          <h2 class="reveal" data-d="1" style="margin-top: 14px;">Four disciplines.<br/><em class="italic" style="color: var(--terracotta);">One practice of recovery.</em></h2>
+        </div>
+        <p class="sec-head-side reveal" data-d="2">Each modality answers a different question the body is asking. Together they form a complete recovery practice — vascular, lymphatic, cutaneous and neuromuscular. Pricing is published in full; nothing hides behind a click.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="discipline section-pad" data-screen-label="03a Body Ballancer">
+    <div class="wrap">
+      <div class="discipline-grid">
+        <div class="discipline-visual reveal">
+          <div class="ph bb">
+            <img class="ph-fill" src="assets/images/discipline-ballancer.jpg" alt="Champagne-coloured compression therapy suit folded neatly on a linen-covered bench" />
+          </div>
+        </div>
+        <div class="discipline-copy reveal" data-d="1">
+          <span class="discipline-num">— 01 / 04</span>
+          <h2>Body Ballancer<sup style="font-size:0.4em; vertical-align: super;">™</sup><br/><em>Compression lymphatic drainage.</em></h2>
+          <p class="lead">Rhythmic compression therapy that mimics manual lymphatic drainage to reduce fluid retention, puffiness and the appearance of cellulite — and to flush lactic acid after hard training.</p>
+
+          <div class="discipline-meta">
+            <div>
+              <div class="label">Mechanism</div>
+              <p>A computer-controlled suit inflates and deflates air chambers in a rhythmic wave, pushing waste fluid toward the lymph nodes for expulsion.</p>
+            </div>
+            <div>
+              <div class="label">Who it's for</div>
+              <p>Bloating, heavy legs, post-training recovery, lymphatic congestion, smoothing the appearance of cellulite.</p>
+            </div>
+          </div>
+
+          <ul class="pricelist" aria-label="Body Ballancer pricing">
+            <li>
+              <span class="p-name">Body Ballancer — Lower Body</span>
+              <span class="p-price">£30.00</span>
+              <span class="p-meta"><span>45 min</span></span>
+            </li>
+            <li>
+              <span class="p-name">Body Ballancer — Upper Body</span>
+              <span class="p-price">£30.00</span>
+              <span class="p-meta"><span>45 min</span></span>
+            </li>
+            <li>
+              <span class="p-name">Body Ballancer — Full Body</span>
+              <span class="p-price">£50.00</span>
+              <span class="p-meta"><span>45 min</span></span>
+            </li>
+            <li>
+              <span class="p-name">Course of 5 — Full Body</span>
+              <span class="p-price">£200.00</span>
+              <span class="p-meta"><span>5 × 45 min</span><span class="saves">Saves £50</span></span>
+            </li>
+          </ul>
+
+          <div class="discipline-cta">
+            <a class="btn btn-solid" href="https://sumupbookings.com/house-of-recovery" target="_blank" rel="noopener noreferrer" aria-label="Book a Body Ballancer session (opens external booking site)">
+              Book Body Ballancer
+              <svg class="arrow" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M0 4h13M9 1l4 3-4 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="discipline section-pad" style="background: var(--linen);" data-screen-label="03b Dermalogica">
+    <div class="wrap">
+      <div class="discipline-grid reverse">
+        <div class="discipline-visual reveal">
+          <div class="ph derm ph-1x1">
+            <img class="ph-fill" src="assets/images/discipline-dermalogica.jpg" alt="Overhead flat-lay of professional-grade skincare on a cream marble surface" />
+          </div>
+        </div>
+        <div class="discipline-copy reveal" data-d="1">
+          <span class="discipline-num">— 02 / 04</span>
+          <h2>Dermalogica<br/><em>Skin health.</em></h2>
+          <p class="lead">Clinical, prescribed facials using professional-grade Dermalogica products and Face Mapping<sup style="font-size:0.6em;">®</sup> diagnosis. Founded on the belief that skincare is health, not luxury.</p>
+
+          <div class="discipline-meta">
+            <div>
+              <div class="label">Mechanism</div>
+              <p>Face Mapping<sup style="font-size:0.6em;">®</sup> diagnosis followed by a customised protocol addressing congestion, dehydration or premature ageing. Therapists also prescribe a home-care regimen.</p>
+            </div>
+            <div>
+              <div class="label">Who it's for</div>
+              <p>Anyone seeking clinical, structural skin transformation rather than a relaxation-led facial.</p>
+            </div>
+          </div>
+
+          <ul class="pricelist" aria-label="Dermalogica pricing">
+            <li>
+              <span class="p-name">Dèsse Pro LED Face Mask</span>
+              <span class="p-price">£5.00</span>
+              <span class="p-meta"><span>10 min</span><span class="saves">Add-on</span></span>
+            </li>
+            <li>
+              <span class="p-name">Dermalogica ProSkin 30 Facial</span>
+              <span class="p-price">£35.00</span>
+              <span class="p-meta"><span>45 min</span></span>
+            </li>
+            <li>
+              <span class="p-name">Dermalogica ProSkin 60 Facial</span>
+              <span class="p-price">£60.00</span>
+              <span class="p-meta"><span>1 h 10 min</span></span>
+            </li>
+          </ul>
+
+          <div class="discipline-cta">
+            <a class="btn btn-solid" href="https://sumupbookings.com/house-of-recovery" target="_blank" rel="noopener noreferrer" aria-label="Book a Dermalogica facial (opens external booking site)">
+              Book a Facial
+              <svg class="arrow" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M0 4h13M9 1l4 3-4 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contrast section-pad" data-screen-label="03c Contrast and Infrared">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="discipline-num">— 03 / 04</span>
+          <p class="eyebrow reveal">Contrast &amp; Infrared</p>
+          <h2 class="reveal" data-d="1" style="margin-top: 14px;">A visceral reset<br/><em style="color: var(--terracotta);">through temperature.</em></h2>
+        </div>
+        <p class="sec-head-side reveal" data-d="2">Infrared detoxifies from the inside; the ice plunge triggers vasoconstriction and a metabolic dopamine spike. Used together, they form a repeatable protocol for athletes and high-performers.</p>
+      </div>
+
+      <div class="contrast-split">
+        <div class="scene cold reveal">
+          <div class="atmo" aria-hidden="true">
+            <span class="mist m1"></span>
+            <span class="mist m2"></span>
+          </div>
+          <div>
+            <p class="scene-label">Cold · 3–10 °C</p>
+            <p class="temp">Plunge.</p>
+            <p class="scene-body">Vasoconstriction. Adrenergic reset. A sympathetic-nervous-system response that ruins every other &ldquo;cold shower&rdquo; habit.</p>
+          </div>
+          <ul class="pricelist" aria-label="Ice plunge pricing">
+            <li>
+              <span class="p-name">Ice Plunge</span>
+              <span class="p-price">£5.00</span>
+              <span class="p-meta"><span>10 min</span></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="scene hot reveal" data-d="1">
+          <div class="atmo" aria-hidden="true">
+            <span class="heat h1"></span>
+            <span class="heat h2"></span>
+          </div>
+          <div>
+            <p class="scene-label">Hot · 45–60 °C</p>
+            <p class="temp">Infrared.</p>
+            <p class="scene-body">Infrared panels heat tissue directly, penetrating deeper than conventional saunas. A slow, vascular detoxification.</p>
+          </div>
+          <ul class="pricelist" aria-label="Infrared sauna pricing">
+            <li>
+              <span class="p-name">Infrared Sauna — 1 Person</span>
+              <span class="p-price">£15.00</span>
+              <span class="p-meta"><span>30 min</span></span>
+            </li>
+            <li>
+              <span class="p-name">Infrared Sauna — 2 Persons</span>
+              <span class="p-price">£25.00</span>
+              <span class="p-meta"><span>30 min</span></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="discipline-cta" style="margin-top: 48px;">
+        <a class="btn btn-solid" href="https://sumupbookings.com/house-of-recovery" target="_blank" rel="noopener noreferrer" aria-label="Book a contrast and infrared session (opens external booking site)">
+          Book Contrast &amp; Infrared
+          <svg class="arrow" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M0 4h13M9 1l4 3-4 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="discipline tesla section-pad" data-screen-label="03d Tesla Chair">
+    <div class="wrap">
+      <div class="discipline-grid">
+        <div class="discipline-visual reveal">
+          <div class="ph tesla-visual">
+            <img class="ph-fill" src="assets/images/discipline-tesla.jpg" alt="Matte-charcoal medical-grade Tesla Pelvic Floor Chair in a clean room" />
+            <span class="tesla-glyph" aria-hidden="true" style="z-index: 2;">Ψ</span>
+          </div>
+          <div class="tesla-stats">
+            <div class="stat">
+              <div class="stat-num"><em>~<span class="count" data-count-to="11000" data-count-prefix="" data-count-suffix="">11,000</span></em></div>
+              <div class="stat-label">Contractions per session</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">45 min</div>
+              <div class="stat-label">Fully clothed</div>
+            </div>
+          </div>
+        </div>
+        <div class="discipline-copy reveal" data-d="1">
+          <span class="discipline-num">— 04 / 04</span>
+          <h2>Tesla Pelvic Floor Chair<br/><em>HIFEM.</em></h2>
+          <p class="lead">Non-invasive electromagnetic stimulation delivering approximately 11,000 supramaximal pelvic-floor contractions per session, fully clothed.</p>
+
+          <div class="discipline-meta">
+            <div>
+              <div class="label">Mechanism</div>
+              <p>High-Intensity Focused Electromagnetic (HIFEM) energy stimulates thousands of supramaximal contractions in a single session — equivalent to about 11,000 Kegels — forcing rapid muscular adaptation.</p>
+            </div>
+            <div>
+              <div class="label">Who it's for</div>
+              <p>Postpartum recovery, stress and urge incontinence (men and women), pelvic-floor weakness, core stability, sexual-health support.</p>
+            </div>
+          </div>
+
+          <ul class="pricelist" aria-label="Tesla Chair pricing">
+            <li>
+              <span class="p-name">Tesla Pelvic Floor Chair</span>
+              <span class="p-price">£70.00</span>
+              <span class="p-meta"><span>45 min</span></span>
+            </li>
+            <li>
+              <span class="p-name">Course of 4</span>
+              <span class="p-price">£250.00</span>
+              <span class="p-meta"><span>4 × 30 min</span><span class="saves">Saves £30</span></span>
+            </li>
+          </ul>
+
+          <div class="discipline-cta">
+            <a class="btn btn-solid" href="https://sumupbookings.com/house-of-recovery" target="_blank" rel="noopener noreferrer" aria-label="Book a Tesla Chair session (opens external booking site)">
+              Book the Tesla Chair
+              <svg class="arrow" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M0 4h13M9 1l4 3-4 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials section-pad" data-screen-label="04 Testimonials">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow reveal">In Practice</p>
+          <h2 class="reveal" data-d="1" style="margin-top: 14px;">What they say<br/><em style="color: var(--terracotta);">after the protocol.</em></h2>
+        </div>
+        <p class="sec-head-side reveal" data-d="2">A small sample of clients, in their own words. We don't publish before-and-after photographs.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- SAMPLE COPY — replace before launch -->
+        <article class="quote-card reveal">
+          <div class="mark" aria-hidden="true">&ldquo;</div>
+          <blockquote>After my second postpartum, the Tesla chair was the only thing that gave me my core back. I cried in the car park after my fourth session — happy crying.</blockquote>
+          <div class="attrib">
+            <img class="avatar" src="assets/images/testimonial-1.jpg" alt="Portrait of A.M." />
+            <div class="who">
+              <span class="name">A.M.</span>
+              <span class="treatment">Tesla Chair · Course of 4</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- SAMPLE COPY — replace before launch -->
+        <article class="quote-card reveal" data-d="1">
+          <div class="mark" aria-hidden="true">&ldquo;</div>
+          <blockquote>I've trained for two ultras on the back of weekly Body Ballancer sessions. Recovery time on tired legs has halved. Worth every penny.</blockquote>
+          <div class="attrib">
+            <img class="avatar" src="assets/images/testimonial-2.jpg" alt="Portrait of J.R." />
+            <div class="who">
+              <span class="name">J.R.</span>
+              <span class="treatment">Body Ballancer · Full Body</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- SAMPLE COPY — replace before launch -->
+        <article class="quote-card reveal" data-d="2">
+          <div class="mark" aria-hidden="true">&ldquo;</div>
+          <blockquote>My skin was a mess of stress breakouts. Three ProSkin 60s in and people are asking what I'm doing. I'm doing this.</blockquote>
+          <div class="attrib">
+            <img class="avatar" src="assets/images/testimonial-3.jpg" alt="Portrait of S.P." />
+            <div class="who">
+              <span class="name">S.P.</span>
+              <span class="treatment">Dermalogica ProSkin 60</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- SAMPLE COPY — replace before launch -->
+        <article class="quote-card reveal">
+          <div class="mark" aria-hidden="true">&ldquo;</div>
+          <blockquote>The ice plunge ruined every other &ldquo;cold shower&rdquo; habit I'd ever built. Once you've done a proper plunge, the bathroom doesn't cut it.</blockquote>
+          <div class="attrib">
+            <img class="avatar" src="assets/images/testimonial-4.jpg" alt="Portrait of D.H." />
+            <div class="who">
+              <span class="name">D.H.</span>
+              <span class="treatment">Ice Plunge · Infrared Sauna</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- SAMPLE COPY — replace before launch -->
+        <article class="quote-card reveal" data-d="1">
+          <div class="mark" aria-hidden="true">&ldquo;</div>
+          <blockquote>They don't do the soft-music-and-cucumber-water thing here. It's clinical and it works. Exactly what I needed.</blockquote>
+          <div class="attrib">
+            <img class="avatar" src="assets/images/testimonial-5.jpg" alt="Portrait of L.K." />
+            <div class="who">
+              <span class="name">L.K.</span>
+              <span class="treatment">Body Ballancer · Dermalogica</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- SAMPLE COPY — replace before launch -->
+        <article class="quote-card reveal" data-d="2">
+          <div class="mark" aria-hidden="true">&ldquo;</div>
+          <blockquote>I came in sceptical and left with a protocol. Six weeks on the Tesla course and the incontinence I'd lived with since my fifties is gone.</blockquote>
+          <div class="attrib">
+            <img class="avatar" src="assets/images/testimonial-6.jpg" alt="Portrait of M.W." />
+            <div class="who">
+              <span class="name">M.W.</span>
+              <span class="treatment">Tesla Chair · Course of 4</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit section-pad" id="visit" data-screen-label="05 Visit">
+    <div class="wrap">
+      <div class="visit-grid">
+        <div>
+          <p class="eyebrow reveal">Visit Us</p>
+          <h2 class="reveal" data-d="1" style="margin-top: 14px;">Worksop,<br/><em style="color: var(--terracotta);">by appointment.</em></h2>
+          <address class="reveal" data-d="2">
+            House&nbsp;of&nbsp;Recovery<br/>
+            86&nbsp;High&nbsp;Hoe&nbsp;Rd<br/>
+            Worksop, S80&nbsp;2DS<br/>
+            United&nbsp;Kingdom
+          </address>
+
+          <div class="hours-card reveal" data-d="3">
+            <p class="eyebrow">Opening Hours</p>
+            <table class="hours-table" aria-label="Opening hours">
+              <tbody>
+                <tr><td>Monday</td>    <td class="closed">Closed</td></tr>
+                <tr><td>Tuesday</td>   <td>11:00 – 19:00</td></tr>
+                <tr><td>Wednesday</td> <td>12:00 – 19:00</td></tr>
+                <tr><td>Thursday</td>  <td>10:00 – 16:00</td></tr>
+                <tr><td>Friday</td>    <td>10:00 – 15:00</td></tr>
+                <tr><td>Saturday</td>  <td>09:00 – 13:00</td></tr>
+                <tr><td>Sunday</td>    <td class="closed">Closed</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="visit-contact reveal" data-d="4">
+            <div>
+              <div class="label">Instagram</div>
+              <div class="val"><a href="https://www.instagram.com/house_of_recovery_/" target="_blank" rel="noopener noreferrer" class="contact-link">@house_of_recovery_</a></div>
+            </div>
+            <div>
+              <div class="label">Email</div>
+              <div class="val"><a href="mailto:clare@houseofrecovery.co.uk" class="contact-link">clare@houseofrecovery.co.uk</a></div>
+            </div>
+          </div>
+
+          <div style="margin-top: 36px;" class="reveal" data-d="5">
+            <a class="btn btn-terra" href="https://sumupbookings.com/house-of-recovery" target="_blank" rel="noopener noreferrer" aria-label="Book a session at House of Recovery (opens external booking site)">
+              Book a Session
+              <svg class="arrow" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M0 4h13M9 1l4 3-4 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="map-ph reveal" data-d="1" aria-label="Map showing the High Hoe Rd location in Worksop">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.674844390623!2d-1.1278144233777598!3d53.30325417646194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879ef7922d56a29%3A0xe54e6fa39f99e8b!2s86%20High%20Hoe%20Rd%2C%20Worksop%20S80%202DS!5e0!3m2!1sen!2suk!4v1716480000000!5m2!1sen!2suk"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Google Map showing House of Recovery location">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer on-dark" data-screen-label="06 Footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo/icon-white.png" alt="House of Recovery" />
+          <p style="max-width: 32ch;">A recovery and skin-health sanctuary in Worksop. Restoration, resilience, results.</p>
+          <a class="btn btn-terra footer-cta" href="https://sumupbookings.com/house-of-recovery" target="_blank" rel="noopener noreferrer" aria-label="Book a session at House of Recovery (opens external booking site)">
+            Book a Session
+            <svg class="arrow" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M0 4h13M9 1l4 3-4 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="socials">
+            <a href="https://www.instagram.com/house_of_recovery_/" target="_blank" rel="noopener noreferrer" aria-label="Follow House of Recovery on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg>
+            </a>
+            <a href="mailto:clare@houseofrecovery.co.uk" aria-label="Email Clare at House of Recovery">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Visit</h4>
+          <p style="font-family: var(--font-display); color: var(--ivory); font-size: 18px; line-height: 1.45;">
+            86 High Hoe Rd<br/>
+            Worksop, S80 2DS<br/>
+            United Kingdom
+          </p>
+          <p style="font-size: 14px;">
+            <a href="mailto:clare@houseofrecovery.co.uk">clare@houseofrecovery.co.uk</a><br/>
+            <a href="https://www.instagram.com/house_of_recovery_/" target="_blank" rel="noopener noreferrer">@house_of_recovery_</a>
+          </p>
+        </div>
+
+        <div>
+          <h4>Hours</h4>
+          <ul class="hours-mini">
+            <li><span>Mon</span> <span style="color: var(--terra-soft); font-style: italic;">Closed</span></li>
+            <li><span>Tue</span> <span>11:00 – 19:00</span></li>
+            <li><span>Wed</span> <span>12:00 – 19:00</span></li>
+            <li><span>Thu</span> <span>10:00 – 16:00</span></li>
+            <li><span>Fri</span> <span>10:00 – 15:00</span></li>
+            <li><span>Sat</span> <span>09:00 – 13:00</span></li>
+            <li><span>Sun</span> <span style="color: var(--terra-soft); font-style: italic;">Closed</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Disciplines</h4>
+          <ul>
+            <li><a href="#disciplines">Body Ballancer</a></li>
+            <li><a href="#disciplines">Dermalogica Skin Health</a></li>
+            <li><a href="#disciplines">Contrast &amp; Infrared</a></li>
+            <li><a href="#disciplines">Tesla Pelvic Floor Chair</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; <span id="year"></span> House of Recovery. All rights reserved.</div>
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<a class="btn btn-terra book-fab" id="bookFab" href="https://sumupbookings.com/house-of-recovery" target="_blank" rel="noopener noreferrer" aria-label="Book a session at House of Recovery (opens external booking site)">
+  Book a Session
+  <svg class="arrow" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M0 4h13M9 1l4 3-4 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const nav = document.getElementById('nav');
+  const progressBar = document.querySelector('.scroll-progress .bar');
+  const fab = document.getElementById('bookFab');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const onScroll = () => {
+    const y = window.scrollY;
+    if (y > 24) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+
+    // Scroll progress
+    const docH = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = docH > 0 ? (y / docH) * 100 : 0;
+    if (progressBar) progressBar.style.setProperty('--p', pct.toFixed(2) + '%');
+
+    // FAB visible after first viewport
+    if (fab) {
+      if (y > window.innerHeight * 0.6) fab.classList.add('show');
+      else fab.classList.remove('show');
+    }
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+
+  // — Reveal observer —
+  const targets = document.querySelectorAll('.reveal, .reveal-words');
+  if (reduced || !('IntersectionObserver' in window)) {
+    targets.forEach(t => t.classList.add('in'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.14, rootMargin: '0px 0px -40px 0px' });
+    targets.forEach(t => io.observe(t));
+  }
+
+  // — Count-up —
+  const fmt = (n) => n.toLocaleString('en-GB');
+  const counters = document.querySelectorAll('.count[data-count-to]');
+  const animateCount = (el) => {
+    const to = parseInt(el.dataset.countTo, 10) || 0;
+    if (reduced) { el.textContent = fmt(to); return; }
+    const dur = 1600;
+    const start = performance.now();
+    const ease = (t) => 1 - Math.pow(1 - t, 3);
+    const tick = (now) => {
+      const p = Math.min(1, (now - start) / dur);
+      const v = Math.round(to * ease(p));
+      el.textContent = fmt(v);
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+  if (counters.length) {
+    if (!('IntersectionObserver' in window) || reduced) {
+      counters.forEach(animateCount);
+    } else {
+      const cio = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            animateCount(e.target);
+            cio.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.4 });
+      counters.forEach(c => { c.textContent = '0'; cio.observe(c); });
+    }
+  }
+</script>
+</body>
+</html>
