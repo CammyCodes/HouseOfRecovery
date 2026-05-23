@@ -111,7 +111,7 @@ Do not paraphrase, round, or alter the price table variables or descriptions bel
 
 ### 5.3 Contrast & Infrared Therapy
 *   **Description**: Visceral temperature exposure. Infrared saunas detoxify; ice plunges trigger vasoconstriction and dopamine.
-*   **Mechanism**: Infrared heat at 45–60 °C; Ice plunge at ≈3–10 °C for sympathetic response.
+*   **Mechanism**: Infrared heat at 45–65 °C; Ice plunge at ≈3–10 °C for sympathetic response.
 *   **Who it's for**: Athletes, high-performers, dopamine reset.
 *   **Pricing**:
     *   `Ice Plunge` | 10 min | **£5.00**

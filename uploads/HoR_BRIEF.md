@@ -137,7 +137,7 @@ Usage rules:
 
 **One-line summary:** A visceral reset through deliberate temperature exposure. Infrared sauna detoxifies from the inside; the ice plunge triggers vasoconstriction and a metabolic dopamine spike.
 
-**The mechanism:** Infrared panels heat tissue directly at 45–60 °C, penetrating deeper than conventional saunas. The ice plunge (≈3–10 °C) triggers intense vasoconstriction and a sympathetic-nervous-system response.
+**The mechanism:** Infrared panels heat tissue directly at 45–65 °C, penetrating deeper than conventional saunas. The ice plunge (≈3–10 °C) triggers intense vasoconstriction and a sympathetic-nervous-system response.
 
 **Who it's for:** Athletes seeking recovery; high-performers wanting a mental-resilience protocol; anyone needing a deep detox or dopamine reset.
 
